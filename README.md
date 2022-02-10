@@ -8,7 +8,7 @@ IB_trading_python
 
 - Install numpy library first => py -m pip install numpy, might need to upgrade => py -m pip install --upgrade pip
 
-  If this doesn't work try theses ones and then upgrade => py -m pip install --upgrade pip
+  If this doesn't work try these ones and then upgrade => py -m pip install --upgrade pip
 
 1. 'py -m pip install numpy' OR (used)
 2. 'python -m pip install numpy' OR
