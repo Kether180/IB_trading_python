@@ -25,4 +25,4 @@ IB_trading_python
 python filename.py
 
 
-* Interactive Broker's account  => username : wilko2040  - German180
+* Interactive Broker's account  => username : ****  - ****
