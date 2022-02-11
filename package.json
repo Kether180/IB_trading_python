@@ -1,0 +1,22 @@
+{
+  "name": "ib_trading_python",
+  "version": "1.0.0",
+  "description": "IB_trading_python",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kether180/IB_trading_python.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kether180/IB_trading_python/issues"
+  },
+  "homepage": "https://github.com/Kether180/IB_trading_python#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
