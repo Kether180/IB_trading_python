@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Kether180/IB_trading_python#readme",
   "dependencies": {
+    "cross-spawn": "^7.0.3",
     "express": "^4.17.2"
   }
 }

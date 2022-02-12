@@ -1,11 +1,27 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const { spawn } = require('child_process');
+
+const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+   console.log('Hello world');
+});
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+
+app.get('/', (req, res) => {
+    const childPython = spawn('python', ['order.py']);
+ 
+    childPython.stdout.on('data', (data) => {
+       console.log(`stdout: ${data}`)
+    });
+ 
+    childPython.stderr.on('data', (data) => {
+       console.error(`stderr: ${data}`);
+    });
+ 
+    childPython.on('close', (code) => {
+       console.log(`child process exited with code ${code}`);
+    });
+ });
+
+app.listen(3000, console.log('Server started on port 3000'));
