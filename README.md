@@ -1,4 +1,4 @@
-# IB_trading_python
+# IBPython_api_websocket_trading
 IB_trading_python
 
 #  Guide to Interactive Brokers API Code 
