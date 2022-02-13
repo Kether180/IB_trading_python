@@ -1,0 +1,2 @@
+
+print("it sucks")

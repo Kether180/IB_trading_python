@@ -2,6 +2,16 @@
 IB_trading_python
 
 
+#  Guide to Interactive Brokers API Code 
+
+
+* Overview 
+
+These programs can help you make the first steps towards working with the Interactive Brokers API. Interactive Brokers API can be very challenging when first getting started and the formal Interactive Brokers documentation lacks some detailed explanation and implementations.
+
+
+#  Installation  - Preparing the environment : 
+
 # Python.
 
 - Run a installation of python library ib_insync /// for windows you need to use a lower python version not 3.10, use => 3.9.1 84x or lower.
@@ -25,4 +35,9 @@ IB_trading_python
 python filename.py
 
 
-* Interactive Broker's account  => username : ****  - ****
+* Interactive Broker's Trading Platform - don't forget to download your Interactive Broker's trading platform (desktop version ) and to log in for checking the Websocket connection.
+
+# Next steps- Python, Node.js server, React.
+
+* Websocket Python, Nodejs - Redis - Google Cloud.
+
