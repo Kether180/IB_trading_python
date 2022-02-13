@@ -54,6 +54,7 @@ for account in ib.accountSum():
 
 ib.run(3)
 
+<<<<<<< HEAD
 
 
 ####
@@ -107,3 +108,5 @@ ib.run(3)
 #start()
 
 # https://www.youtube.com/watch?v=QF0aSdjv3Jc
+=======
+>>>>>>> 8ea4307f64d42fa9b4edd8608420445cd429832d

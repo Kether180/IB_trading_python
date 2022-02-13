@@ -2,6 +2,10 @@
 IB_trading_python
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8ea4307f64d42fa9b4edd8608420445cd429832d
 #  Guide to Interactive Brokers API Code 
 
 
@@ -41,3 +45,7 @@ python filename.py
 
 * Websocket Python, Nodejs - Redis - Google Cloud.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8ea4307f64d42fa9b4edd8608420445cd429832d
