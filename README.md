@@ -11,7 +11,7 @@ IB_trading_python
 These programs can help you make the first steps towards working with the Interactive Brokers API. Interactive Brokers API can be very challenging when first getting started and the formal Interactive Brokers documentation lacks some detailed explanation and implementations.
 
 
-#  Instalation  - Preparing the environment : 
+#  Installation  - Preparing the environment : 
 
 # Python.
 
@@ -36,7 +36,7 @@ These programs can help you make the first steps towards working with the Intera
 python filename.py
 
 
-* Interactive Broker's Trading Platform - don't forget to download your Interactive Broker's trading platform (desktop version ) and to loggin in for checking the Websocket connection.
+* Interactive Broker's Trading Platform - don't forget to download your Interactive Broker's trading platform (desktop version ) and to log in for checking the Websocket connection.
 
 # following steps- Python webscoket => Node.js server-  next repository .
 
