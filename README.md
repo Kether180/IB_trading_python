@@ -28,7 +28,7 @@ These programs can help you make the first steps towards working with the Intera
 
 
 * Install for Python 3.6  dataclasses package py -m pip install dataclasses
-* 
+
 * Run in Python => python filename.py
 
 
