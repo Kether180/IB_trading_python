@@ -38,8 +38,8 @@ python filename.py
 
 * Interactive Broker's Trading Platform - don't forget to download your Interactive Broker's trading platform (desktop version ) and to log in for checking the Websocket connection.
 
-# following steps- Python webscoket => Node.js server-  next repository .
+# Next steps- Python webscoket, Node.js server, React.
 
-* Create a Websocket Python &  Node.JS Code - Redis - Google Cloud.
+* Websocket Python, Node.JS Code - Redis - Google Cloud.
 
 
