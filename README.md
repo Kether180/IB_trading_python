@@ -13,9 +13,9 @@ These programs can help you make the first steps towards working with the Intera
 
 # Python.
 
-- Run a installation of python library ib_insync /// for windows you need to use a lower python version not 3.10, use => 3.9.1 84x or lower.
+* Run a installation of python library ib_insync /// for windows you need to use a lower python version not 3.10, use => 3.9.1 84x or lower.
 
-- Install numpy library first => py -m pip install numpy, might need to upgrade => py -m pip install --upgrade pip
+* Install numpy library first => py -m pip install numpy, might need to upgrade => py -m pip install --upgrade pip
 
   If this doesn't work try these ones and then upgrade => py -m pip install --upgrade pip
 
@@ -24,14 +24,12 @@ These programs can help you make the first steps towards working with the Intera
 3. 'py -m pip3 install numpy' OR
 4. 'python -m pip3 install numpy
 
-- After Install ib_insync library = > py -m pip install ib_insync
+* After Install ib_insync library = > py -m pip install ib_insync
 
 
-*  Install for Python 3.6  dataclasses package py -m pip install dataclasses
-
- * Run in Python ////
-
-python filename.py
+* Install for Python 3.6  dataclasses package py -m pip install dataclasses
+* 
+* Run in Python => python filename.py
 
 
 * Interactive Broker's Trading Platform - don't forget to download your Interactive Broker's trading platform (desktop version ) and to log in for checking the Websocket connection.
