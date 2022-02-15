@@ -70,9 +70,11 @@ cancelledEvent (trade: Trade)
 
 # Market data scanners - worldwide 
 
+* scanStocks.py file > Use in order to browse stocks in different regions. Also browse other assets like ETF, Funds and Bonds.
+
 https://groups.io/g/insync/topic/market_data_scanners/22402297?p=
 
- e.g 
+ e.g Use individual locationCodes to change world regions .
 
  LocationCode
 
