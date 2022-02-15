@@ -1,55 +1,29 @@
 from ib_insync import *
 
+from accountdetails import *
 
 ib = IB()
 ib.connect("127.0.0.1", 7497, clientId=1)
-ib.accountdetails()
+ib.Accountdetails()
 
-
-class AccountSummaryTags:
-    ("AccountType", "NetLiquidation", "TotalCashValue", "SettledCash", "AccruedCash", "BuyingPower", "EquityWithLoanValue", "PreviousDayEquityWithLoanValue", "GrossPositionValue", "ReqTEquity", "ReqTMargin", "SMA", "InitMarginReq", "MaintMarginReq", "AvailableFunds", "ExcessLiquidity",
-     "Cushion", "FullInitMarginReq", "FullMaintMarginReq", "FullAvailableFunds", "FullExcessLiquidity", "LookAheadNextChange", "LookAheadInitMarginReq", "LookAheadMaintMarginReq", "LookAheadAvailableFunds", "LookAheadExcessLiquidity", "HighestSeverity", "DayTradesRemaining", "Leverage")
-
-
-account = ib.reqAccountSummary(AccountSummaryTags)
 
 # reqAccountSummary(9001, "All", AccountSummaryTags.GetAllTags());
 # reqAccountSummary(9002, "All", "$LEDGER");
 
-#accountSummary(int reqId, string account, string tag, string value, string currency)
-# print ("Acct Summary. ReqId: " + reqId + ", Acct: " + account + ", Tag: " + tag + ", Value: " + value + ", Currency: " + currency);
+account_summary = ib.reqAccountSummary("accountSummaryTags", False, False)
+
+print ("Acct Summary. ReqId: " + reqId + ", Acct: " + account + ", Tag: " + tag + ", Value: " + value + ", Currency: " + currency)
 
 
-# accountSummaryEnd(int reqId)
-           # print("AccountSummaryEnd. Req Id: "+reqId+"\n");
-
-print(account)
+print(account_summary)
 
 
-def accountDetails(account, total):
-    print("My account details")
-    print(total)
-
-
-account.totalEvent += accountDetails
+def onAccountSummary(accountdetails):  # define function
+    print("pending Account Details event received")
+    print(accountdetails)
+    ib.accountSummaryEvent += onAccountSummary
 
 
 ib.sleep(3)
-
-
-for account in ib.accountSum():
-    print("=== Account Detailed ===")
-    print(account)
-
- # def nextValidId(self, accountId: int)
-
-  #  print("Account Id nextValidAccountId: %d", accountId)
-   # self.nextValidAccountId = accountId
-    #self.reqAccountSummary(9002, "All", "$LEDGER")
-
-
-# def accountSummary(self, reqId: int, account: str, tag: str, value: str, currency: str):
- #   print("Acct Summary. ReqId:", reqId, "Acct:", account,"Tag: ", tag, "Value:", value, "Currency:", currency)
-
 
 ib.run(3)

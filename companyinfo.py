@@ -4,20 +4,23 @@ from bs4 import BeautifulSoup as bs  #  Library for pulling data out of HTML and
 ib = IB()
 ib.connect('127.0.0.1', 7497, clientId=1)
 
-stock = Stock('DBK', 'SMART', 'EUR')  # Deutsche Bank AG Company information 
+stock = Stock('DBK', 'SMART', 'EUR')  # Deutsche Bank AG Company information  - DBK   - AAPL . TSLA 
 
 
-companyinfo = ib.reqFundamentalData(stock, 'ReportSnapshot')
+companyinfo = ib.reqFundamentalData(stock, 'ReportSnapshot') # Require a report type.
 
-print(companyinfo)
+
+#print(companyinfo)
 
 content = bs(companyinfo, "xml")
 
-ratios = content.find_all("Ratio")
+print(content)
+
+ratios = content.find_all("Ratio")  # ratio's fields
 
 for ratio in ratios:
-    print(ratio['FieldName'])
-    print(ratio.text)
+ print(ratio['FieldName'])
+ print(ratio.text)
 
 # 'ReportsFinSummary': Financial summary
 # 'ReportsOwnership': Company's ownership
@@ -25,3 +28,5 @@ for ratio in ratios:
 # 'ReportsFinStatements': Financial Statements
 # 'RESC': Analyst Estimates
 # 'CalendarReport': Company's calendar
+
+
